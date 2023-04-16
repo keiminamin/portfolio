@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #0E273C;
+
+}
+
+nav {
+
+    display: flex;
+    padding: 70px 71px;
+
+    position: fixed;
+    z-index: 999;
+    width: 90%;
+
+
+
+
+
+}
+
+
+nav ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+
+nav h2 {
+
+    font-weight: 130;
+    font-size: 24px;
+    width: 50%
+}
+
+nav ul li a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 24px;
+    font-weight: 130;
+}
+
+#page-top {
+    margin-right: 30vw;
+}
+
+#top {
+    display: flex;
+    height: 90vh;
+    padding-top: 20vh;
+
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    padding-left: 71px;
+
+}
+
+.title h2 {
+    margin-bottom: 24px;
+}
+
+.title img {
+    height: 6px;
+
+    margin-bottom: 24px;
+}
+
+.image {
+
+    margin-top: -170px;
+    padding-right: 120px;
+}
+
+.image img {
+    width: 900px;
+}
+
+#top h2 {
+    font-size: 64px;
+}
+
+#top h3 {
+    font-weight: 200;
+    font-size: 24px;
+}
+
+#about {
+    background-image: url(../image/background_about.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 85vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+
+    padding-top: 130px;
+
+
+
+}
+
+#about h2 {
+    font-size: 64px;
+    position: absolute;
+    top: -52px;
+    left: 71px;
+}
+
+.title_about {
+    font-size: 24px;
+    font-weight: 100;
+    position: absolute;
+    top: 70px;
+    left: 71px;
+}
+
+#about p {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.main {
+    margin-left: 71px;
+}
+
+.main img {
+
+    margin-bottom: 20px;
+}
+
+.main h3 {
+    font-size: 24px;
+    font-weight: 200px;
+    margin-bottom: 30px;
+}
+
+.main p {
+    margin-bottom: 20px;
+}
+
+.sub img {}
+
+.tennis {
+    display: flex;
+
+    margin-bottom: 70px;
+}
+
+.programming {
+    display: flex;
+}
+
+.caption {
+    padding-left: 120px;
+    margin-right: 180px;
+}
+
+.caption h3 {
+    margin-bottom: 45px;
+
+}
+
+.caption p {
+    line-height: 2.5;
+}
+
+#works {
+
+    margin-top: 30px;
+    background-image: url(../image/background_work.png);
+
+    background-size: 1330px 730px;
+    background-repeat: no-repeat;
+
+    height: 80vh;
+}
+
+#works h2 {
+    font-size: 64px;
+    padding-left: 71px;
+    padding-top: 7px;
+
+
+}
+
+#works h3 {
+    font-size: 24px;
+    padding-left: 71px;
+    margin: 10px 0px;
+    font-weight: 200;
+
+}
+
+.slider {
+    padding-left: 1.5vw;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center
+}
+
+.slide_caption {
+    background: #A9CEEC;
+    width: 450px;
+    padding: 10px;
+
+
+}
+
+.slide_caption p {
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.slide_caption div {
+    background: #ffffff;
+    border-radius: 5px;
+    width: 13%;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+    margin-left: 24vw;
+}
+
+.slide_caption div a {
+    text-decoration: none;
+}
+
+#contact {
+    position: relative;
+    margin-top: 5vh;
+    height: 70vh;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 64px;
+    margin-bottom: -5px;
+}
+
+.line {
+    width: 71px;
+    height: 4px;
+
+}
+
+#contact p {
+    margin: 20px;
+    font-size: 22px;
+}
+
+.sns {
+
+    width: 100px;
+    margin: 40px 80px;
+
+}
+
+.sns_group {
+    display: flex;
+    justify-content: center;
+
+}
+
+.triangle1 {
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+.triangle2 {
+    position: absolute;
+    transform: rotate(180deg);
+    right: 0;
+    top: 140px;
+}
+
+footer {
+    background: #A9CEEC;
+    padding: 10px;
+    text-align: center;
+}
+
+.fuwatAnime {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.slide-in {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.slide-in_inner {
+    display: inline-block;
+
+}
+
+/*左右のアニメーション*/
+.leftAnime {
+    opacity: 0;
+    /*事前に透過0にして消しておく*/
+}
+
+.slideAnimeLeftRight {
+    animation-name: slideTextX100;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextX100 {
+    from {
+        transform: translateX(-100%);
+        /*要素を左の枠外に移動*/
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        /*要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+
+.slideAnimeRightLeft {
+    animation-name: slideTextX-100;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+
+@keyframes slideTextX-100 {
+    from {
+        transform: translateX(100%);
+        /*要素を右の枠外に移動*/
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        /*要素を元の位置に移動*/
+        opacity: 1;
+    }
+}

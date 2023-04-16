@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <ul class="ul-left">
+            <h2 id="page-top">Keitaro Nagashima</h2>
+        </ul>
+        <ul class="ul-right">
+            <li><a href="#top">Top</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="top">
+        <div class="title">
+            <span class="slide-in leftAnime">
+                <h2 class=" slide-in_inner leftAnnimeInner">Keitaro</h2>
+                <img class="leftAnnimeInner" src="image/line.png" alt="">
+                <h3 class="leftAnnimeInner">WebDesign & WebService</h3>
+            </span>
+        </div>
+        <div class="image">
+            <img class="top_img" src="image/top.png" alt="">
+        </div>
+    </section>
+    <section class="fuwat" id="about">
+        <h2>About</h2>
+        <h3 class="title_about">アバウト</h3>
+        <div class="main">
+            <img width="348px" src="image/keitan-photo.jpg" alt="">
+            <h3>長島 啓太朗 Nagashima Keitaro</h3>
+            <p>東京大学教養学部 文科二類 二年生 </p>
+            <p>Life is Tech 14期<br>
+                Webデザイン Webサービスメンター</p>
+        </div>
+        <div class="sub">
+            <div class="tennis">
+                <div class="caption">
+                    <h3>Tennis</h3>
+                    <p>中高からやっているテニスが趣味です。<br>
+                        現在テニスサークルに入っています。<br>
+                        週3~4回ほど打ってます！</p>
+                </div>
+                <img width="244" src="image/LINE_ALBUM_230414.jpg" alt="">
+            </div>
+            <div class="programming">
+                <div class="caption">
+                    <h3>Programming</h3>
+                    <p> 中高からHP制作を中心にプログラミン<br>
+                        グをやっています。
+                        Life is Techという<br>
+                        会社で中高生にプログラミングを教えて<br>
+                        います(言語 : HTML/CSS Ruby )</p>
+                </div>
+                <img width="244" src="image/20220626_181644.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="fuwat" id="works">
+        <h2>Works</h2>
+        <h3>ワークス</h3>
+        <div class="slider">
+            <div>
+                <img width="470" src="image/yourhunger.png" alt="">
+                <div class="slide_caption">
+                    <p>今日のコーディネイトサイト</p>
+                    <div> <a target="_blank" href="https://github.com/keiminamin/ld-14-original">CITE</a></div>
+                </div>
+            </div>
+            <div>
+                <img width="470" src="image/everyday_birthday.png" alt="">
+                <div class="slide_caption">
+                    <p>誕生日通知サイト</p>
+                    <div><a target="_blank" href="https://github.com/keiminamin/original">Github</a></div>
+                </div>
+            </div>
+            <div>
+                <img width="470" src="image/molkey.png" alt="">
+                <div class="slide_caption">
+                    <p>マイナースポーツモルックの紹介サイト</p>
+                    <div><a target="_blank" href="https://molkey.net/">Cite</a></div>
+                </div>
+            </div>
+            <div>
+                <img width="470" src="image/shareboard.png" alt="">
+                <div class="slide_caption">
+                    <p>課題共有サイト</p>
+                    <div><a target="_blank" href="https://github.com/keiminamin/original_autumn">Github</a></div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <section class="fuwat" id="contact">
+        <img width="70" class="triangle1" src="image/traiangel.png" alt="">
+        <img width="70" class="triangle2" src="image/traiangel.png" alt="">
+        <h2>Contact</h2>
+        <img class="line" src="image/line.png" alt="">
+        <p>コンタクト</p>
+        <p>少しでも興味持っていただいた方はご連絡ください。</p>
+        <div class="sns_group">
+
+            <a target="_blank" 　 href="https://www.facebook.com/kei.aim"><img class="sns" src="image/fb.png" alt=""></a>
+            <a target="_blank" href="https://twitter.com/kei_2003_05"><img class="sns" src="image/twitter.png" alt=""></a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Keitaro Nagashima</p>
+    </footer>
+
+
+    <script type="text/javascript">
+        function slideAnime() {
+            //====左に動くアニメーションここから===
+            $('.leftAnime').each(function() {
+                var elemPos = $(this).offset().top - 50;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll >= elemPos - windowHeight) {
+                    //左から右へ表示するクラスを付与
+                    //テキスト要素を挟む親要素（左側）とテキスト要素を元位置でアニメーションをおこなう
+                    $(this).addClass("slideAnimeLeftRight"); //要素を左枠外にへ移動しCSSアニメーションで左から元の位置に移動
+                    $(this).children(".leftAnimeInner").addClass("slideAnimeRightLeft"); //子要素は親要素のアニメーションに影響されないように逆の指定をし元の位置をキープするアニメーションをおこなう
+                } else {
+                    //左から右へ表示するクラスを取り除く
+                    $(this).removeClass("slideAnimeLeftRight");
+                    $(this).children(".leftAnimeInner").removeClass("slideAnimeRightLeft");
+
+                }
+            });
+
+        }
+        $(function() {
+            $('a[href^=#]').click(function() {
+                var href = $(this).attr("href");
+                var target = $(href);
+                var posTop = target.offset().top;
+                $('body,html').animate({
+                    scrollTop: posTop
+                }, 300, 'swing');
+                return false;
+            });
+
+        });
+
+        $(document).ready(function() {
+            $('.slider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                pauseOnDotsHover: false,
+
+
+
+            });
+            $('.fuwat').css('visibility', 'hidden');
+            $(window).scroll(function() {
+                var windowHeight = $(window).height(),
+                    topWindow = $(window).scrollTop();
+                $('.fuwat').each(function() {
+                    var objectPosition = $(this).offset().top;
+                    if (topWindow > objectPosition - windowHeight + 200) {
+                        $(this).addClass("fuwatAnime");
+                    }
+                });
+            });
+            var topBtn = $('#page-top');
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    topBtn.fadeOut();
+
+                } else {
+                    topBtn.fadeIn();
+                }
+            });
+
+        });
+        $(window).on('load', function() {
+            slideAnime();
+        });
+    </script>
+</body>
+
+</html>
